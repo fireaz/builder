@@ -1,11 +1,11 @@
-# laravel-package-boilerplate
+# builder
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/fireaz/boilerplate.svg?style=flat-square)](https://packagist.org/packages/fireaz/boilerplate)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/fireaz/boilerplate/run-tests?label=tests)](https://github.com/fireaz/boilerplate/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/fireaz/laravel-package-boilerplate/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/fireaz/laravel-package-boilerplate/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/fireaz/boilerplate.svg?style=flat-square)](https://packagist.org/packages/fireaz/boilerplate)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/fireaz/builder.svg?style=flat-square)](https://packagist.org/packages/fireaz/builder)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/fireaz/builder/run-tests?label=tests)](https://github.com/fireaz/builder/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/fireaz/builder/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/fireaz/builder/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/fireaz/builder.svg?style=flat-square)](https://packagist.org/packages/fireaz/builder)
 
-fireaz/boilerplate is a PHP library for boilerplateing module,plugin,theme that can be easily configured and extended.
+fireaz/builder is a PHP library for builder setting, menu, form, table, crud code quick..
 
 ## Requirements
 
@@ -16,7 +16,7 @@ PHP 7.1+
 You can install package via composer
 
 ```bash
-$ composer require fireaz/boilerplate
+$ composer require fireaz/builder
 ```
 
 ## Usage
