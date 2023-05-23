@@ -3,7 +3,7 @@
 namespace FireAZ\Builder\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use FireAZ\Platform\Menu\MenuBuilder;
+use FireAZ\Builder\Menu\MenuBuilder;
 
 /**
  * 
@@ -28,12 +28,12 @@ use FireAZ\Platform\Menu\MenuBuilder;
  * @method static void Register($callback)
  * @method static void DoRegister()
  *
- * @see \FireAZ\Platform\Menu\MenuManager
+ * @see \FireAZ\Builder\Menu\MenuManager
  */
 class Menu extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \FireAZ\Platform\Menu\MenuManager::class;
+        return \FireAZ\Builder\Menu\MenuManager::class;
     }
 }
