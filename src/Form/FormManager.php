@@ -1,6 +1,6 @@
 <?php
 
-namespace FireAZ\Builder\Field;
+namespace FireAZ\Builder\Form;
 
 use FireAZ\Builder\BuilderManager;
 

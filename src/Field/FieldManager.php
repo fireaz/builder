@@ -1,6 +1,6 @@
 <?php
 
-namespace FireAZ\Builder\Menu;
+namespace FireAZ\Builder\Field;
 
 use FireAZ\Builder\BuilderManager;
 
