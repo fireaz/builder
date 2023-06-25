@@ -207,7 +207,6 @@ class MenuBuilder extends HtmlBuilder
                     $attribute .= $key . "='" . urlencode(json_encode($value)) . "' ";
                 }
             }
-
             echo "<div class='" . $item['class'] . "' id='" . $item['id'] . "' " . $attribute . " >";
         }
         Menu::DoRender($this, $this->position);
