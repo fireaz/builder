@@ -5,14 +5,14 @@ namespace FireAZ\Builder\Manager;
 
 class TableManager extends CommonManager
 {
-    private $fields;
-    public function __construct($fields = [])
-    {
-        $this->fields = $fields;
-    }
     public static function Create($fields): self
     {
-        return new self($fields);
+        return (new self())->Fields($fields);
+    }
+    public function Fields($fields): self
+    {
+        $this->fields = $fields;
+        return $this;
     }
     public function getFields()
     {

@@ -9,14 +9,14 @@ class FieldManager extends CommonManager
 {
     use FieldDefault;
 
-    public function __construct($name = '')
-    {
-        $this->fieldName = $name;
-        $this->Text();
-    }
     public static function Create($name): self
     {
-        return new self($name);
+        return (new self())->Name($name);
+    }
+    public function Name($name)
+    {
+        $this->fieldName = $name;
+        return $this;
     }
     public function Format($format)
     {
@@ -58,5 +58,9 @@ class FieldManager extends CommonManager
     public function getFieldName()
     {
         return $this->fieldName;
+    }
+    public function getFieldForm()
+    {
+        return $this->fieldFormat;
     }
 }

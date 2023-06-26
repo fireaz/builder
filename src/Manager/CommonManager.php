@@ -23,4 +23,13 @@ class CommonManager extends ArrayWireable
     {
         return TableManager::Create($this->getFields());
     }
+    public function toLivewire()
+    {
+        return $this->data ? $this->data->getData() : [];
+    }
+
+    public static function fromLivewire($value): self
+    {
+        return new self($value);
+    }
 }
