@@ -2,10 +2,9 @@
 
 namespace FireAZ\Builder\Menu;
 
-use FireAZ\Builder\BuilderManager;
 use Illuminate\Support\Facades\Route;
 
-class MenuManager extends BuilderManager
+class MenuManager
 {
     private $registers = [];
     private $positions = [];

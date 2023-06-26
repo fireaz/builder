@@ -2,25 +2,30 @@
 
 namespace FireAZ\Builder\Field;
 
+use FireAZ\Builder\Manager\CommonManager;
 use FireAZ\Builder\Traits\FieldDefault;
-use Illuminate\Support\Traits\Macroable;
 
-class FieldConfig
+class FieldManager extends CommonManager
 {
-    use Macroable, FieldDefault;
+    use FieldDefault;
 
-    private $fieldType = 'Text';
-    private $fieldLabel = 'Text';
-    private $fieldTitle = 'Text';
-    private $fieldName = 'Text';
-    private $fieldFormat;
     public function __construct($name = '')
     {
         $this->fieldName = $name;
+        $this->Text();
+    }
+    public static function Create($name): self
+    {
+        return new self($name);
     }
     public function Format($format)
     {
         $this->fieldFormat = $format;
+        return $this;
+    }
+    public function Rule($rule)
+    {
+        $this->fieldRule = $rule;
         return $this;
     }
     public function Title($title)
@@ -31,6 +36,11 @@ class FieldConfig
     public function Label($label)
     {
         $this->fieldLabel = $label;
+        return $this;
+    }
+    public function Layout($layout)
+    {
+        $this->fieldLayout = $layout;
         return $this;
     }
     public function getFieldType()
