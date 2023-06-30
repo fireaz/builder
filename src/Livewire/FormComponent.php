@@ -12,4 +12,8 @@ class FormComponent extends Component
     {
         $this->form = $config;
     }
+    public function render()
+    {
+        return view_scope($this->form->getView());
+    }
 }

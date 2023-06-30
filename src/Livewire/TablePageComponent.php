@@ -5,11 +5,15 @@ namespace FireAZ\Builder\Livewire;
 use FireAZ\Builder\Manager\PageManager;
 use FireAZ\Reojs\Component;
 
-class PageComponent extends Component
+class TablePageComponent extends Component
 {
     public PageManager $page;
     public function mount($config)
     {
-        $this->page = $config;
+        $this->page = app($config);
+    }
+    public function render()
+    {
+        return view_scope($this->page->getView());
     }
 }

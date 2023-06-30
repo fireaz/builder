@@ -4,7 +4,8 @@ namespace FireAZ\Builder;
 
 use FireAZ\Builder\Facades\Menu;
 use FireAZ\Builder\Livewire\FormComponent;
-use FireAZ\Builder\Livewire\PageComponent;
+use FireAZ\Builder\Livewire\FormPageComponent;
+use FireAZ\Builder\Livewire\TablePageComponent;
 use FireAZ\Builder\Livewire\TableComponent;
 use Illuminate\Support\ServiceProvider;
 use FireAZ\LaravelPackage\ServicePackage;
@@ -38,7 +39,8 @@ class BuilderServiceProvider extends ServiceProvider
     {
         Livewire::component('builder::form', FormComponent::class);
         Livewire::component('builder::table', TableComponent::class);
-        Livewire::component('builder::page', PageComponent::class);
+        Livewire::component('builder::form-page', FormPageComponent::class);
+        Livewire::component('builder::table-page', TablePageComponent::class);
         if (Request::isMethod('get')) {
             // Only Get Request
             Route::matched(function ($route) {

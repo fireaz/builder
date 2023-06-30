@@ -12,4 +12,8 @@ class TableComponent extends Component
     {
         $this->table = $config;
     }
+    public function render()
+    {
+        return view_scope($this->table->getView());
+    }
 }

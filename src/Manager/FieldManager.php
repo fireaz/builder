@@ -63,4 +63,8 @@ class FieldManager extends CommonManager
     {
         return $this->fieldFormat;
     }
+    public function getView()
+    {
+        return "builder::manager.field";
+    }
 }
